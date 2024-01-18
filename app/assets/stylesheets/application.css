@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+a {
+  text-decoration: none;
+}
+
+.flat-card-image {
+  background-position: center;
+  background-size: cover;
+  height: 180px;
+}

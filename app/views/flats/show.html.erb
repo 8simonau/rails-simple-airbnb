@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col-8">
+    <div class="bg-light p-3 mb-3">
+      <h1><%= @flat.name %></h1>
+      <p><%= @flat.address %></p>
+    </div>
+    <div class="bg-light p-3 mb-3">
+      <h2>A bit more about this flat...</h2>
+      <p><%= @flat.description %></p>
+    </div>
+  </div>
+
+  <div class="col-4">
+    <div class="bg-light p-3 mb-3">
+      <h3>Book this place!</h3>
+      <form action="submit">
+        <div class="mb-3 d-flex justify-content-between">
+          <label for="from">From:</label>
+          <input type="date" name="from">
+        </div>
+        <div class="mb-3 d-flex justify-content-between">
+          <label for="to">To:</label>
+          <input type="date" name="to">
+        </div>
+        <input type="submit" value="Book" class="btn btn-success">
+      </form>
+    </div>
+    <div class="bg-light p-3 mb-3">
+      <h3>Details</h3>
+      <d-flex>
+        <span><%= @flat.number_of_guests %> people</span>
+        <span><%= @flat.price_per_night %>€</span>
+      </d-flex>
+    </div>
+    <div class="bg-light p-3 mb-3 d-flex justify-content-between">
+      <span><strong>Share</strong></span>
+      <div>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+    </div>
+  </div>
+</div>
